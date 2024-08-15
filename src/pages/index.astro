@@ -1,0 +1,26 @@
+---
+import BlogPost from '../components/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "domin.es";
+const title = "";
+const description = "";
+const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+const backgroundColors = ['bg-gray-100'];
+---
+<BaseLayout pageTitle={pageTitle} title={title} description={description}>
+    <div class="pt-4">
+        {allPosts.map((post, index) => (
+            <div class="space-y-8 space-x-6 p-4 items-center text-center px-4 sm:px-6 lg:px-8">
+                <BlogPost 
+                    url={post.url} 
+                    title={post.frontmatter.title} 
+                    description={post.frontmatter.description} 
+                    author={post.frontmatter.author} 
+                    pubDate={post.frontmatter.pubDate} 
+                    tags={post.frontmatter.tags}
+                />
+            </div>
+        ))}
+    </div>
+</BaseLayout>

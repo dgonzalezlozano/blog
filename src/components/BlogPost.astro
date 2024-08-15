@@ -1,0 +1,23 @@
+---
+const { title, url, description, author, pubDate, tags } = Astro.props;
+import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
+---
+<div class="pb-4">
+    <h2 class="text-3xl font-semibold my-2">
+        <a class="bg-green-200 hover:bg-green-300" href={url}>{title}</a>
+    </h2>
+    <p class="robotoloco text-sm">{format(new Date(pubDate), 'd MMMM, yyyy', { locale: es })} </p>
+    <span class="tags robotoloco space-x-4">
+        {tags.map(tag => (
+            <a href={`/tags/${tag}`}>
+                <span class="px-2 py-1 bg-blue-200 text-xs rounded hover:bg-blue-400">
+                    #{tag}
+                </span>
+            </a>
+          ))}
+    </span>
+    <span>
+        <p class="robotoloco">{description}</p>
+    </span>
+</div>

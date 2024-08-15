@@ -1,0 +1,265 @@
+body {
+    font-family: 'Fira Code', monospace;
+}
+.header-background {
+    /* background-image: url('../../public/img/bg_1.webp'); */
+    background-color: #1a73e8;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar la legibilidad */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header-content {
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.header-nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+.breadcrumbs {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+.breadcrumbs a {
+    color: #555;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-card-content {
+    padding: 1rem;
+}
+.blog-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.blog-card-excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+.blog-card-link {
+    text-decoration: none;
+    color: #1a202c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.blog-card-link:hover {
+    color: #4a5568;
+}
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ffffff;
+}
+
+.markdown{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h5 {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h6 {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .markdown p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    color: #333;
+  }
+  
+  .markdown ul,
+  .markdown ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+  }
+  
+  .markdown ul li,
+  .markdown ol li {
+    margin-bottom: 0.5em;
+  }
+
+  .markdown blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    color: #666;
+    margin: 1.5em 0;
+    font-style: italic;
+    background-color: #f9f9f9;
+  }
+  
+  .markdown code {
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+  }
+  
+  .markdown pre {
+    background-color: #f5f5f5;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  .markdown pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .markdown a {
+    color: #1a73e8;
+    text-decoration: underline;
+  }
+  
+  .markdown a:hover {
+    color: #0c47a1;
+  }
+  
+  .markdown img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+    border-radius: 5px;
+  }
+  
+  .markdown table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+  }
+  
+  .markdown th,
+  .markdown td {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .markdown th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  .text-shadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .custom-underline {
+    position: relative;
+    display: inline-block; /* Asegura que el ::after se alinea correctamente con el texto */
+  }
+  
+  .custom-underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px; /* Espesor del subrayado */
+    background-color: #49a768; /* Color del subrayado */
+    margin-top: 6px; /* Espacio entre el texto y el subrayado */
+    opacity: 0; /* Hace invisible el subrayado cuando no hay hover */
+    transition: opacity 0.3s; /* Suaviza la transición del efecto */
+  }
+  
+  .custom-underline:hover::after {
+    opacity: 1; /* Hace el subrayado visible al hacer hover */
+  }
+
+  .robotoloco {
+    font-family: "Inter", sans-serif;
+    /** font-family: "Lato", sans-serif;*/
+    /* font-family: 'Robot', sans-serif;*/
+  }
+
+  .content-font {
+    font-family: "Roboto", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  
