@@ -3,16 +3,6 @@ import PostLayout from './PostLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <PostLayout pageTitle={frontmatter.title} title={frontmatter.title} description={frontmatter.description} author={frontmatter.author} pubDate={frontmatter.pubDate.toString().slice(0,10)} tags={frontmatter.tags}>
-  <!--<p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-
-  <p>Escrito por: {frontmatter.author}</p>
-
-  <div class="tags">
-    {frontmatter.tags.map((tag) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
-  </div>-->
 
   <div class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-6xl markdown">
     <slot />

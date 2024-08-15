@@ -5,9 +5,9 @@ pubDate: 2024-08-10
 description: '¿Qué son?'
 author: 'domin'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'El logotipo completo de Astro.'
-tags: ["programación", "SOLID", "clean code"]
+    url: ''
+    alt: ''
+tags: ["principios-solid", "buenas-practicas", "codigo-limpio"]
 ---
 
 # [#](#-qué-son-los-principios-solid) ¿Qué son los principios SOLID?

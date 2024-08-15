@@ -10,7 +10,7 @@ import { es } from 'date-fns/locale';
     <p class="robotoloco text-sm">{format(new Date(pubDate), 'd MMMM, yyyy', { locale: es })} </p>
     <span class="tags robotoloco space-x-4">
         {tags.map(tag => (
-            <a href={`/tags/${tag}`}>
+            <a href={`/blog/tags/${tag}`}>
                 <span class="px-2 py-1 bg-blue-200 text-xs rounded hover:bg-blue-400">
                     #{tag}
                 </span>

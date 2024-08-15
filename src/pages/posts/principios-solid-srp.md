@@ -7,7 +7,7 @@ author: 'domin'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'El logotipo completo de Astro.'
-tags: ["programación", "SOLID", "clean code"]
+tags: ["principios-solid", "buenas-practicas", "codigo-limpio", 'single-responsibility-principle']
 ---
 
 # Single Responsibility Principle (SRP) - Principio de Responsabilidad Única.
