@@ -2,14 +2,13 @@ body {
     font-family: 'Fira Code', monospace;
 }
 .header-background {
-    /* background-image: url('../../public/img/bg_1.webp'); */
     background-color: #1a73e8;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 .header-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar la legibilidad */
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -191,10 +190,13 @@ h1 {
     color: #333;
   }
   
-  .markdown a {
-    color: #1a73e8;
-    text-decoration: underline;
+  .markdown ul > a {
+    color: #315785;
   }
+
+  /*.markdown h1 > a, h2 > a {
+    color: #a2c5f0;
+  }*/
   
   .markdown a:hover {
     color: #0c47a1;
@@ -232,28 +234,26 @@ h1 {
   
   .custom-underline {
     position: relative;
-    display: inline-block; /* Asegura que el ::after se alinea correctamente con el texto */
+    display: inline-block;
   }
   
   .custom-underline::after {
     content: '';
     display: block;
     width: 100%;
-    height: 3px; /* Espesor del subrayado */
-    background-color: #49a768; /* Color del subrayado */
-    margin-top: 6px; /* Espacio entre el texto y el subrayado */
-    opacity: 0; /* Hace invisible el subrayado cuando no hay hover */
-    transition: opacity 0.3s; /* Suaviza la transición del efecto */
+    height: 3px;
+    background-color: #49a768;
+    margin-top: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .custom-underline:hover::after {
-    opacity: 1; /* Hace el subrayado visible al hacer hover */
+    opacity: 1;
   }
 
   .robotoloco {
     font-family: "Inter", sans-serif;
-    /** font-family: "Lato", sans-serif;*/
-    /* font-family: 'Robot', sans-serif;*/
   }
 
   .content-font {
