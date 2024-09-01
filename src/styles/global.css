@@ -2,13 +2,11 @@ body {
     font-family: 'Fira Code', monospace;
 }
 .header-background {
-    background-color: #1a73e8;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 .header-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +80,6 @@ body {
     color: #4a5568;
 }
 footer {
-    background-color: #1a1a1a;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -261,5 +258,3 @@ h1 {
     font-optical-sizing: auto;
     font-style: normal;
   }
-  
-  

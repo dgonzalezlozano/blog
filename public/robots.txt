@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://domin.es/sitemap-index.xml

@@ -5,6 +5,9 @@ import Footer from '../components/Footer.astro';
 import HeaderPost from '../components/HeaderPost.astro';
 import HeaderBase from '../components/HeaderBase.astro';
 
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+import '../styles/ccElegantBlack.css';
+
 const { pageTitle, title, pubDate, author, tags, description } = Astro.props;
 const blogTitle = 'domin.es';
 ---
@@ -27,5 +30,11 @@ const blogTitle = 'domin.es';
                 mobileMenu.classList.toggle('hidden');
             });
         </script>
+        <!--<script>
+            import { run } from 'vanilla-cookieconsent';
+            import { config } from '../components/CookieConsentConfig';
+            document.body.classList.add('cc--elegant-black');
+            run(config);
+        </script>-->
     </body>
 </html>
