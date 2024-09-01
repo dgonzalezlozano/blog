@@ -13,7 +13,11 @@ tags: ["principios-solid", "buenas-practicas", "codigo-limpio", 'single-responsi
 # Single Responsibility Principle (SRP) - Principio de Responsabilidad Única.
 
 ## ¿Qué es?
-
+El **SRP** es uno de los cinco principios **SOLID** de la programación orientada a objetos. Este principio dice que una clase de tener una responsabilidad y por lo tanto una razón para cambiar.
+Esto entre otras cosas, facilita:
+- La reutilización del código.
+- Facilidad para testear.
+- Código más sencillo de entender y mantener.
 ## Ejemplo.
 Imagina que trabajas en una tienda muy grande como un empleado polifacético.
 Haces de todo: repones productos en las estanterías, atiendes a los clientes, cobras en la caja, revisas el stock, haces pedidos, cuadras las cuentas, contactas con distribuidores etc. 

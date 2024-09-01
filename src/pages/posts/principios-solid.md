@@ -26,7 +26,7 @@ tags: ["principios-solid", "buenas-practicas", "codigo-limpio"]
                     </li>
                     <li>
                         <a href="#openclose-principle" class="text-gray-600 hover:text-gray-800">
-                            Open/Close Principle (OCP)
+                            Open/Closed Principle (OCP)
                         </a>
                     </li>
                     <li>
@@ -70,13 +70,13 @@ Por ejemplo, una clase que se encarga de calcular el total de una factura ademá
 
 Para cumplir el **SRP** debemos separar estas funcionalidades en clases distintas.
 
-## [Open/Close Principle](#open-close-principle)
+## [Open/Closed Principle](#open-close-principle)
 **El código ya escrito debe estar abierto a la extensión pero no a la modificación.**
 Es decir, debes poder añadir funcionalidades nuevas pero **NO** modificar el código existente.
 - **Abierto**: Puedes agregar nuevas funcionalidades sin modificar el código que ya existe, por ejemplo derivando clases o implementando interfaces.
 - **Cerrado**: No debes modificar el código que ya está en funcionamiento para agregar nuevas funcionalidades. Al cumplir esto te aseguras de que la funcionalidad actual se mantenga estable.
 
-Por ejemplo para cumplir este principio **Open/Close** tendríamos que poder crear nuevas clases extendiendo de una clase base sin tener que modificar la clase original.
+Por ejemplo para cumplir este principio **Open/Closed** tendríamos que poder crear nuevas clases extendiendo de una clase base sin tener que modificar la clase original.
 Esto evitaría fallos en el código que ya está funcionando y facilita el mantenimiento ya que la clase original está intacta.
 
 ## [Liskov Substitution Principle](#liskov-substitution-principle)
