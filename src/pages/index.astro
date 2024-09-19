@@ -9,7 +9,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 const backgroundColors = ['bg-gray-100'];
 ---
 <BaseLayout pageTitle={pageTitle} title={title} description={description}>
-    <div class="pt-4">
+    <div class="mt-6 mb-6">
         {allPosts.map((post, index) => (
             <div class="space-y-8 space-x-6 p-4 items-center text-center px-4 sm:px-6 lg:px-8">
                 <BlogPost 
