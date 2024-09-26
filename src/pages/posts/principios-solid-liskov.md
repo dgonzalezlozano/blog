@@ -65,3 +65,4 @@ Para arreglar esta situación en lugar de extender `Bicicleta` de `Vehiculo` deb
 De esta forma, si reemplazamos la clase base por una subclase o a la inversa, no habrá problemas. Pues tanto clase como subclases comparten la misma lógica.
 
 ## ¿Cómo lo detectamos?
+- Si la subclase no utiliza métodos de la clase base o lanzan excepciones en su lugar, es una señal clara.
