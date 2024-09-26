@@ -15,32 +15,32 @@ tags: ["principios-solid", "buenas-practicas", "codigo-limpio"]
         <h2 class="text-2xl font-bold mb-4">Índice</h2>
         <ol class="list-decimal ml-6 space-y-2">
             <li>
-                <a href="#qué-son-los-principios-solid" class="text-gray-gray hover:text-gray-800">
+                <a href="#qué-son-los-principios-solid" class="text-gray-gray hover:!text-green-400">
                     ¿Qué son los principios SOLID?
                 </a>
                 <ol class="list-decimal ml-6 space-y-2">
                     <li>
-                        <a href="#single-responsibility-principle" class="text-gray-600 hover:text-gray-800">
+                        <a href="#single-responsibility-principle" class="text-gray-600 hover:!text-green-400">
                             Single Responsibility Principle (SRP)
                         </a>
                     </li>
                     <li>
-                        <a href="#openclose-principle" class="text-gray-600 hover:text-gray-800">
+                        <a href="#openclose-principle" class="text-gray-600 hover:!text-green-400">
                             Open/Closed Principle (OCP)
                         </a>
                     </li>
                     <li>
-                        <a href="#liskov-substitution-principle" class="text-gray-600 hover:text-gray-800">
+                        <a href="#liskov-substitution-principle" class="text-gray-600 hover:!text-green-400">
                             Liskov Substitution Principle (LSP)
                         </a>
                     </li>
                     <li>
-                        <a href="#interface-segregation-principle" class="text-gray-600 hover:text-gray-800">
+                        <a href="#interface-segregation-principle" class="text-gray-600 hover:!text-green-400">
                             Interface Segregation Principle (ISP)
                         </a>
                     </li>
                     <li>
-                        <a href="#dependency-inversion-principle" class="text-gray-600 hover:text-gray-800">
+                        <a href="#dependency-inversion-principle" class="text-gray-600 hover:!text-green-400">
                             Dependency Inversion Principle (DIP)
                         </a>
                     </li>
