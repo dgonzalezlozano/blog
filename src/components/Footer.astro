@@ -1,24 +1,43 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION, CONTACT_EMAIL } from '../scripts/globals';
 const mailtoLink = `mailto:${CONTACT_EMAIL}`;
+const currentYear = new Date().getFullYear();
+import BoboCatImage from '../images/bobocat_size.png';
 ---
-<footer class="bg-gray-800 text-white bottom-0 w-full py-4">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-        <p>&copy; 2024 {SITE_TITLE}.</p>
-        <p>Made with ❤️ in 08940</p>
-        <div class="flex space-x-4 mt-2">
-            <a href="https://instagram.com/d0min.gl" target="_blank" class="hover:text-green-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/domingo-gonzález-lozano-657ba0105" target="_blank" class="hover:text-green-300">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/dgonzalezlozano" target="_blank" class="hover:text-green-300">
-                <i class="fab fa-github"></i>
-            </a>
+<footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8">
+    <div class="container mx-auto max-w-6xl sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-xl font-semibold mb-4">
+                    <a href="/">
+                        <img class="w-12 h-8" src={BoboCatImage.src} title="GatoBobo">
+                    </a>
+                </h3>
+                <a href="/" class="text-sm text-gray-300 hover:text-green-400 transition-colors duration-300 mb-2">/home</a>
+                <a href="/about" class="text-sm text-gray-300 hover:text-green-400 transition-colors duration-300 mb-2">/whoiam</a>
+            </div>
+            <div class="flex flex-col items-center">
+                <h3 class="text-xl font-semibold mb-4">Sígueme</h3>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/d0min.gl" target="_blank" class="text-2xl hover:text-green-400 transition-colors duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/domingo-gonzález-lozano-657ba0105" target="_blank" class="text-2xl hover:text-green-400 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/dgonzalezlozano" target="_blank" class="text-2xl hover:text-green-400 transition-colors duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-end">
+                <h3 class="text-xl font-semibold mb-4">Otros enlaces</h3>
+                <a href="/aviso-legal" class="text-sm text-gray-300 hover:text-green-400 transition-colors duration-300">Aviso Legal</a>
+            </div>
         </div>
-        <div class="flex space-x-4 mt-2">
-            <a href="/aviso-legal" class="text-xs">Aviso Legal</a>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p>&copy; {currentYear} {SITE_TITLE}.</p>
+            <p class="mt-2 text-sm text-gray-400">Hecho con ❤️ en 08940</p>
         </div>
     </div>
 </footer>
