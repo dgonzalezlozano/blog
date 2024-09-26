@@ -56,7 +56,7 @@ class Bicicleta extends Vehiculo
     }
 }
 ```
-
+<br>
 En este caso incumpliríamos el principio del LSP porque `Bicicleta` no puede sustituir a `Vehiculo` sin romper la lógica. Porque las bicicletas clásicas no tienen motor, lo que no sigue la lógica de la clase base.
 
 ## Refactor.
@@ -65,4 +65,5 @@ Para arreglar esta situación en lugar de extender `Bicicleta` de `Vehiculo` deb
 De esta forma, si reemplazamos la clase base por una subclase o a la inversa, no habrá problemas. Pues tanto clase como subclases comparten la misma lógica.
 
 ## ¿Cómo lo detectamos?
-- Si la subclase no utiliza métodos de la clase base o lanzan excepciones en su lugar, es una señal clara.
+### Métodos no utilizados o anulados.
+Si la subclase no utiliza métodos de la clase base o lanzan excepciones en su lugar, es una señal clara.
