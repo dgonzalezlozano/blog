@@ -2,7 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Principios SOLID - Interface Segregation Principle'
 pubDate: 2024-09-29
-description: 'Principio de Segregación de Interfaces (ISP)'
+description: 'Aprende el Principio de Segregación de Interfaces (ISP) dentro de los principios SOLID. Descubre cómo diseñar interfaces más específicas y optimizar tu código en desarrollo de software.'
+subTitle: 'Principio de Segregación de Interfaces (ISP)'
+keywords: 'ISP, Principio de Segregación de Interfaces, principios SOLID, interfaces, programación, código limpio, desarrollo de software, diseño de interfaces'
 author: 'domin'
 image:
     url: ''

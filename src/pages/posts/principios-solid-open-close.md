@@ -2,7 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Principios SOLID - Open/Closed'
 pubDate: 2024-09-01
-description: 'Principio SOLID abierto/cerrado OCP'
+description: 'Aprende el Principio Abierto/Cerrado (OCP) de SOLID, clave para escribir código extensible sin modificar el existente. Mejora la flexibilidad de tus proyectos aplicando buenas prácticas de programación.'
+subTitle: 'Principio SOLID abierto/cerrado OCP'
+keywords: 'principio abierto/cerrado, OCP, SOLID, desarrollo de software, código extensible, buenas prácticas, programación, diseño de software, refactorización, patrones de diseño"'
 author: 'domin'
 image:
     url: ''

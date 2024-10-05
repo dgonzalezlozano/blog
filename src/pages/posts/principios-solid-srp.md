@@ -2,7 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Principios SOLID - Single Responsibility Principle (SRP)'
 pubDate: 2024-08-11
-description: 'Una clase, una responsabilidad. Mejora la claridad y mantenibilidad del código.'
+description: 'Conoce el Principio de Responsabilidad Única (SRP), uno de los cinco principios SOLID. Aprende cómo mejorar la claridad, mantenibilidad y testabilidad de tu código dividiendo responsabilidades en clases especializadas.'
+keywords: 'principio SRP, SOLID, Responsabilidad Única, código limpio, desarrollo software, buenas prácticas, arquitectura software, mantenibilidad, clases en programación'
+subTitle: 'Una clase, una responsabilidad. Mejora la claridad y mantenibilidad del código.'
 author: 'domin'
 image:
     url: ''

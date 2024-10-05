@@ -2,7 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Principios SOLID - Sustitución de Liskov'
 pubDate: 2024-09-26
-description: 'Principio de sustitución de Liskov'
+description: 'Explora el Principio de Sustitución de Liskov (LSP), parte de los principios SOLID. Aprende cómo diseñar subclases que respeten el comportamiento de sus clases base sin romper la lógica del programa.'
+subTitle: 'Principio de sustitución de Liskov'
+keywords: 'principio de sustitución de liskov, SOLID, LSP, programación, clases base, subclases, código limpio, buenas prácticas, desarrollo de software'
 author: 'domin'
 image:
     url: ''

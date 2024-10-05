@@ -2,7 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Principios SOLID'
 pubDate: 2024-08-10
-description: '¿Qué son los principios SOLID?'
+subTitle: '¿Qué son los principios SOLID?'
+description: 'Aprende los principios SOLID para escribir código limpio y mantenible. Descubre los conceptos clave de Responsabilidad Única, Abierto/Cerrado, Sustitución de Liskov, Segregación de Interfaces y la Inversión de Dependencias.'
+keywords: 'principios SOLID, programación, código limpio, software, desarrollo, responsabilidad única, abierto cerrado, liskov, segregación de interfaces, inversión de dependencias'
 author: 'domin'
 image:
     url: ''

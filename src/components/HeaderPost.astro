@@ -1,7 +1,7 @@
 ---
 import HeaderElements from "./HeaderElements.astro";
 import Mobile from "./Mobile.astro";
-const { title, pubDate, author, tags, description } = Astro.props;
+const { title, pubDate, author, tags, description, subTitle } = Astro.props;
 import { SITE_TITLE, SITE_DESCRIPTION } from '../scripts/globals';
 const originalDate = new Date(pubDate);
 const formattedDate = originalDate.toLocaleDateString('es-ES', {
@@ -13,11 +13,13 @@ const formattedDate = originalDate.toLocaleDateString('es-ES', {
 ---
 <header class="header-background bg-gray-800">
     <div class="container mx-auto max-w-6xl sm:px-6 lg:px-8 relative z-10">
-        <HeaderElements />
+        <HeaderElements
+            description={description}
+        />
     </div>
     <div class="header-content">
         <h1 class="header-title text-shadow">{title}</h1>
-        <p class="text-xl text-shadow">{description}</p>
+        <p class="text-xl text-shadow">{subTitle}</p>
         <div class="header-content">
             <div class="text-sm text-gray-300">
                 <span>Escrito por <strong>{author}</strong> el <strong>{formattedDate}</strong></span>

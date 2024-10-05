@@ -1,7 +1,7 @@
 ---
 import HeaderElements from "./HeaderElements.astro";
 import Mobile from "./Mobile.astro";
-const { title, pubDate, author, tags, description } = Astro.props;
+const { title, pubDate, author, tags, description, subTitle } = Astro.props;
 import { SITE_TITLE, SITE_DESCRIPTION } from '../scripts/globals';
 ---
 <header class="header-background bg-gray-800">
@@ -10,7 +10,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../scripts/globals';
     </div>
     <div class="header-content">
         <h1 class="header-title text-shadow">{title}</h1>
-        <p class="text-xl text-shadow">{description}</p>
+        <p class="text-xl text-shadow">{subTitle}</p>
     </div>
     <Mobile />
 </header>

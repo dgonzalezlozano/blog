@@ -8,16 +8,21 @@ import HeaderBase from '../components/HeaderBase.astro';
 import 'vanilla-cookieconsent/dist/cookieconsent.css';
 import '../styles/ccElegantBlack.css';
 
-const { pageTitle, title, pubDate, author, tags, description } = Astro.props;
-const blogTitle = 'domin.es';
+const { pageTitle, title, pubDate, author, tags, description, subTitle, keywords } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <HeaderBase pageTitle={pageTitle}/>
+        <HeaderBase 
+            pageTitle={pageTitle}
+            subTitle={subTitle}
+            description={description}
+            keywords={keywords}
+            author={author}
+        />
     </head>
     <body class="flex flex-col min-h-screen bg-gray-100">
-        <HeaderPost title={title} pubDate={pubDate} author={author} tags={tags} description={description}/>
+        <HeaderPost title={title} pubDate={pubDate} author={author} tags={tags} description={description} subTitle={subTitle} keywords={keywords}/>
         <main class="flex-grow">
             <slot />
         </main>
